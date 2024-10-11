@@ -1,0 +1,5 @@
+The only required software package for this analysis script is ROOT.
+
+Once ROOT is installed, the code can be run with "root -l analyzeHEPMCEvents_MC.cxx"
+
+
