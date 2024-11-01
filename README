@@ -1,5 +1,21 @@
 The only required software package for this analysis script is ROOT.
 
-Once ROOT is installed, the code can be run with "root -l analyzeHEPMCEvents_MC.cxx"
+To analyze "generator level" MC files (HEPMC):
+
+the code can be run with "root -l analyzeHEPMCEvents_MC.cxx"
+
+Note: please use a ROOT 6.3 version, or greater, to avoid issues.
+
+To analyze the EICRECON fully reconstructed output, use the following sequence of commands, initially:
+
+mkdir reconstructionOutput
+
+[copy data files into this directory]
+
+check "inputFileList...." to ensure the list is current.
+
+Check analyzeEICRECONEvents.C to ensure correct list is being read-in.
+
+root -l analyzeEICRECONEvents.C
 
 
